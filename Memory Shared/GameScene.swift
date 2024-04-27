@@ -13,6 +13,10 @@ class GameScene: SKScene {
     
     var count = 0
     var otherNode: SKSpriteNode!
+    var tappableNode: SKSpriteNode!
+    var tappableNode1: SKSpriteNode!
+    var tappableNode2: SKSpriteNode!
+    var tappableNode3: SKSpriteNode!
 //    var backgroundMusic: SKAudioNode!
 
     
@@ -43,12 +47,29 @@ class GameScene: SKScene {
         }
 
         // Set up tappableNode
-        if let tappableNode = self.childNode(withName: "koran") as? SKSpriteNode {
-            tappableNode.name = "tappableNode"
+        if let node1 = self.childNode(withName: "koran") as? SKSpriteNode {
+            tappableNode = node1
         } else {
             print("tappableNode not found!")
         }
         
+        if let node2 = self.childNode(withName: "pesawat") as? SKSpriteNode {
+            tappableNode1 = node2
+        } else {
+            print("tappableNode not found!")
+        }
+        
+        if let node3 = self.childNode(withName: "kalengputih") as? SKSpriteNode {
+            tappableNode2 = node3
+        } else {
+            print("tappableNode not found!")
+        }
+        
+        if let node4 = self.childNode(withName: "bottle") as? SKSpriteNode {
+            tappableNode3 = node4
+        } else {
+            print("tappableNode not found!")
+        }
 //        if let musicURL = Bundle.main.url(forResource: "background_music", withExtension: "mp3") {
 //            backgroundMusic = SKAudioNode(url: musicURL)
 //            addChild(backgroundMusic)
@@ -70,17 +91,63 @@ class GameScene: SKScene {
                 let location = touch.location(in: self)
                 let touchedNode = self.atPoint(location)
                 //kasih operator atau untuk tappablenode yang lain kemudian hapus parentnya
-                if touchedNode.name == "tappableNode" {
+                if touchedNode == tappableNode {
                     count += 1
-                    if count >= 3 {
+                    print("Benar")
+                    if count >= 4 {
                         moveToSecondScene()
                     } else {
                         //tidak muncul di layar???
                         changeOtherNodeColor()
                         // Setelah dipencet 1x remove tappablenode dari parent sehingga tappablenode tidak bisa di spam
 //                        tappableNode.removeFromParent()
+                        
                     }
+                    tappableNode.removeFromParent()
                 }
+                else if touchedNode == tappableNode1 {
+                    count += 1
+                    print("Benar")
+                    if count >= 4 {
+                        moveToSecondScene()
+                    } else {
+                        //tidak muncul di layar???
+                        changeOtherNodeColor()
+                        // Setelah dipencet 1x remove tappablenode dari parent sehingga tappablenode tidak bisa di spam
+//                        tappableNode.removeFromParent()
+                        
+                    }
+                    tappableNode1.removeFromParent()
+                }
+                else if touchedNode == tappableNode2 {
+                    count += 1
+                    print("Benar")
+                    if count >= 4 {
+                        moveToSecondScene()
+                    } else {
+                        //tidak muncul di layar???
+                        changeOtherNodeColor()
+                        // Setelah dipencet 1x remove tappablenode dari parent sehingga tappablenode tidak bisa di spam
+//                        tappableNode.removeFromParent()
+                        
+                    }
+                    tappableNode2.removeFromParent()
+                }
+                else if touchedNode == tappableNode3 {
+                    count += 1
+                    print("Benar")
+                    if count >= 4 {
+                        moveToSecondScene()
+                    } else {
+                        //tidak muncul di layar???
+                        changeOtherNodeColor()
+                        // Setelah dipencet 1x remove tappablenode dari parent sehingga tappablenode tidak bisa di spam
+//                        tappableNode.removeFromParent()
+                        
+                    }
+                    tappableNode3.removeFromParent()
+                }
+                
             }
         }
     

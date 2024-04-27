@@ -18,6 +18,7 @@
 		8A3DF3592BD8586000D5F370 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DF3582BD8586000D5F370 /* AudioManager.swift */; };
 		8A3DF35D2BD85B3600D5F370 /* Bink's Sake (Instrumental).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A3DF35C2BD85B3600D5F370 /* Bink's Sake (Instrumental).mp3 */; };
 		8A3DF35F2BD85DD700D5F370 /* SecondScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DF35E2BD85DD700D5F370 /* SecondScene.swift */; };
+		8A3DF3ED2BDD1EA700D5F370 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DF3EC2BDD1EA700D5F370 /* SplashScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		8A3DF3582BD8586000D5F370 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		8A3DF35C2BD85B3600D5F370 /* Bink's Sake (Instrumental).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Bink's Sake (Instrumental).mp3"; path = "../../../../Downloads/Bink's Sake (Instrumental).mp3"; sourceTree = "<group>"; };
 		8A3DF35E2BD85DD700D5F370 /* SecondScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScene.swift; sourceTree = "<group>"; };
+		8A3DF3EC2BDD1EA700D5F370 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			children = (
 				8A3DF33B2BD7DF2100D5F370 /* AppDelegate.swift */,
 				8A3DF33D2BD7DF2100D5F370 /* GameViewController.swift */,
+				8A3DF3EC2BDD1EA700D5F370 /* SplashScreenViewController.swift */,
 				8A3DF33F2BD7DF2100D5F370 /* Main.storyboard */,
 				8A3DF3422BD7DF2100D5F370 /* LaunchScreen.storyboard */,
 			);
@@ -172,6 +175,7 @@
 			files = (
 				8A3DF3472BD7DF2100D5F370 /* GameScene.swift in Sources */,
 				8A3DF35F2BD85DD700D5F370 /* SecondScene.swift in Sources */,
+				8A3DF3ED2BDD1EA700D5F370 /* SplashScreenViewController.swift in Sources */,
 				8A3DF33E2BD7DF2100D5F370 /* GameViewController.swift in Sources */,
 				8A3DF3592BD8586000D5F370 /* AudioManager.swift in Sources */,
 				8A3DF33C2BD7DF2100D5F370 /* AppDelegate.swift in Sources */,
@@ -329,11 +333,11 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -361,11 +365,11 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
