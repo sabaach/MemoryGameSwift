@@ -17,6 +17,8 @@
 		2F74E8DA2BDA87A300496DFC /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F74E8D92BDA87A300496DFC /* GameOverScene.swift */; };
 		2F74E8DC2BDA87D700496DFC /* GameOverScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2F74E8DB2BDA87D700496DFC /* GameOverScene.sks */; };
 		2F74E8E02BDA9B2100496DFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F74E8DF2BDA9B2100496DFC /* AppDelegate.swift */; };
+		2F74E8E22BDF53E100496DFC /* GameWinScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2F74E8E12BDF53E100496DFC /* GameWinScene.sks */; };
+		2F74E8E42BDF53EB00496DFC /* GameWinScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F74E8E32BDF53EB00496DFC /* GameWinScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		2F74E8D92BDA87A300496DFC /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 		2F74E8DB2BDA87D700496DFC /* GameOverScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOverScene.sks; sourceTree = "<group>"; };
 		2F74E8DF2BDA9B2100496DFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2F74E8E12BDF53E100496DFC /* GameWinScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameWinScene.sks; sourceTree = "<group>"; };
+		2F74E8E32BDF53EB00496DFC /* GameWinScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWinScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 				2F74E8C42BD9391B00496DFC /* GameViewController.swift */,
 				2F74E8C02BD9391B00496DFC /* Actions.sks */,
 				2F74E8DD2BDA87EC00496DFC /* GameScene */,
+				2F74E8E52BDF53F500496DFC /* Game-Win */,
 				2F74E8DE2BDA87F400496DFC /* GameOver */,
 				2F74E8C62BD9391B00496DFC /* Main.storyboard */,
 				2F74E8C92BD9391C00496DFC /* Assets.xcassets */,
@@ -91,6 +96,15 @@
 				2F74E8DB2BDA87D700496DFC /* GameOverScene.sks */,
 			);
 			path = GameOver;
+			sourceTree = "<group>";
+		};
+		2F74E8E52BDF53F500496DFC /* Game-Win */ = {
+			isa = PBXGroup;
+			children = (
+				2F74E8E32BDF53EB00496DFC /* GameWinScene.swift */,
+				2F74E8E12BDF53E100496DFC /* GameWinScene.sks */,
+			);
+			path = "Game-Win";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +170,7 @@
 				2F74E8BF2BD9391B00496DFC /* GameScene.sks in Resources */,
 				2F74E8CA2BD9391C00496DFC /* Assets.xcassets in Resources */,
 				2F74E8CD2BD9391C00496DFC /* LaunchScreen.storyboard in Resources */,
+				2F74E8E22BDF53E100496DFC /* GameWinScene.sks in Resources */,
 				2F74E8C12BD9391B00496DFC /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F74E8E42BDF53EB00496DFC /* GameWinScene.swift in Sources */,
 				2F74E8E02BDA9B2100496DFC /* AppDelegate.swift in Sources */,
 				2F74E8C32BD9391B00496DFC /* GameScene.swift in Sources */,
 				2F74E8C52BD9391B00496DFC /* GameViewController.swift in Sources */,
@@ -330,6 +346,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,6 +375,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
