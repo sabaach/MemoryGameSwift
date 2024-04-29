@@ -20,9 +20,21 @@ struct ContentView: View {
     @State var greenSlider: Double
     @State var blueSlider: Double
     
+    @State var showAlert = false
+    
+    func areColorsEqual() -> String{
+        if(redActual==redSlider &&
+           greenActual==greenSlider &&
+           blueActual==blueSlider){
+            return "The color match!"
+        }else{
+            return "The color not match, try again."
+        }
+    }
+    
     var body: some View {
         VStack (spacing: 20){
-            Text("Match this color").font(.largeTitle)
+            
             HStack{
                 Circle().fill(Color(
                     red: redActual,
@@ -35,26 +47,29 @@ struct ContentView: View {
                     .padding()
             }
             
-            Sliders(Value: $redSlider, color: .red, textColor: "Red").accentColor(.red)
-            Sliders(Value: $greenSlider, color: .green, textColor: "Green").accentColor(.green)
-            Sliders(Value: $blueSlider, color: .blue, textColor: "Blue").accentColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+            Sliders(Value: $redSlider, color: .red, textColor: "🔴").accentColor(.red)
+            Sliders(Value: $greenSlider, color: .green, textColor: "🟢").accentColor(.green)
+            Sliders(Value: $blueSlider, color: .blue, textColor: "🔵").accentColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
             
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                Text("Submit")
+            Button(action: {self.showAlert = true}) {
+                Text("✅")}
+            /*.alert(isPresented: $showAlert){
+                Alert(title: Text("Result", message:Text(areColorsEqual())))
+            }*/
+                .padding(EdgeInsets(top: 16, leading: 24, bottom: 16, trailing: 24))
+                .background(Color.orange)
+                .cornerRadius(.infinity)
+            
+            /*Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Text("")
             }).padding(EdgeInsets(top: 16, leading: 24, bottom: 16, trailing: 24))
                 .background(Color(red: 134, green: 167, blue: 252))
                 .cornerRadius(.infinity)
-                .foregroundColor(.black)
-            
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                Text("Reset")
-            }).padding(EdgeInsets(top: 16, leading: 24, bottom: 16, trailing: 24))
-                .background(Color(red: 134, green: 167, blue: 252))
-                .cornerRadius(.infinity)
-                .foregroundColor(.black)
+                .foregroundColor(.black)*/
             
             
         }
+        
     }
 }
 
