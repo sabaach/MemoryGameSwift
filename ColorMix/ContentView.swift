@@ -23,12 +23,12 @@ struct ContentView: View {
     @State var showAlert = false
     
     func areColorsEqual() -> String{
-        if(redActual==redSlider &&
-           greenActual==greenSlider &&
-           blueActual==blueSlider){
+        if(Int(redSlider * 255) == Int(redActual * 255) &&
+           Int(greenSlider * 255) == Int(greenActual * 255) &&
+           Int(blueSlider * 255) == Int(blueActual * 255)){
             return "The color match!"
         }else{
-            return "The color not match, try again."
+            return "The color not match, try again! Red should be: \(Int(redActual * 255)), green: \(Int(greenActual * 255)), blue: \(Int(blueActual * 255))"
         }
     }
     
@@ -41,7 +41,7 @@ struct ContentView: View {
                     green: greenActual,
                     blue: blueActual)).padding()
                 Circle().fill(Color(
-                    red:redSlider,
+                    red: redSlider,
                     green: greenSlider,
                     blue: blueSlider))
                     .padding()
@@ -51,22 +51,14 @@ struct ContentView: View {
             Sliders(Value: $greenSlider, color: .green, textColor: "🟢").accentColor(.green)
             Sliders(Value: $blueSlider, color: .blue, textColor: "🔵").accentColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
             
-            Button(action: {self.showAlert = true}) {
+            Button(action: {
+                print(areColorsEqual())
+            }) {
                 Text("✅")}
-            /*.alert(isPresented: $showAlert){
-                Alert(title: Text("Result", message:Text(areColorsEqual())))
-            }*/
+            
                 .padding(EdgeInsets(top: 16, leading: 24, bottom: 16, trailing: 24))
-                .background(Color.orange)
+                .background(Color.black)
                 .cornerRadius(.infinity)
-            
-            /*Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                Text("")
-            }).padding(EdgeInsets(top: 16, leading: 24, bottom: 16, trailing: 24))
-                .background(Color(red: 134, green: 167, blue: 252))
-                .cornerRadius(.infinity)
-                .foregroundColor(.black)*/
-            
             
         }
         

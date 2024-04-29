@@ -11,6 +11,7 @@
 		850347D82BD99C9700582A75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850347D72BD99C9700582A75 /* ContentView.swift */; };
 		850347DA2BD99C9800582A75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 850347D92BD99C9800582A75 /* Assets.xcassets */; };
 		850347DD2BD99C9800582A75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 850347DC2BD99C9800582A75 /* Preview Assets.xcassets */; };
+		850347E82BDF6F4500582A75 /* WinPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850347E72BDF6F4500582A75 /* WinPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		850347D72BD99C9700582A75 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		850347D92BD99C9800582A75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		850347DC2BD99C9800582A75 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		850347E72BDF6F4500582A75 /* WinPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				850347D52BD99C9700582A75 /* ColorMixApp.swift */,
 				850347D72BD99C9700582A75 /* ContentView.swift */,
+				850347E72BDF6F4500582A75 /* WinPage.swift */,
 				850347D92BD99C9800582A75 /* Assets.xcassets */,
 				850347DB2BD99C9800582A75 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				850347E82BDF6F4500582A75 /* WinPage.swift in Sources */,
 				850347D82BD99C9700582A75 /* ContentView.swift in Sources */,
 				850347D62BD99C9700582A75 /* ColorMixApp.swift in Sources */,
 			);
