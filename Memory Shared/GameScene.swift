@@ -13,6 +13,9 @@ class GameScene: SKScene {
     
     var count = 0
     var otherNode: SKSpriteNode!
+    var otherNode1: SKSpriteNode!
+    var otherNode2: SKSpriteNode!
+    var otherNode3: SKSpriteNode!
     var tappableNode: SKSpriteNode!
     var tappableNode1: SKSpriteNode!
     var tappableNode2: SKSpriteNode!
@@ -40,12 +43,34 @@ class GameScene: SKScene {
     func setUpScene() {
         BackgroundMusic.shared.playBackgroundMusic()
         // Get otherNode from GameScene.sks
+        
+        //#OtherNode
         if let node = self.childNode(withName: "boxkoran") as? SKSpriteNode {
             otherNode = node
         } else {
             print("otherNode not found!")
         }
-
+        
+        if let onode = self.childNode(withName: "boxbottle") as? SKSpriteNode {
+            otherNode1 = onode
+        } else {
+            print("otherNode not found!")
+        }
+        
+        if let onode1 = self.childNode(withName: "boxkaleng") as? SKSpriteNode {
+            otherNode2 = onode1
+        } else {
+            print("otherNode not found!")
+        }
+        
+        if let onode2 = self.childNode(withName: "boxpesawat") as? SKSpriteNode {
+            otherNode3 = onode2
+        } else {
+            print("otherNode not found!")
+        }
+        
+        //#TappableNode
+        
         // Set up tappableNode
         if let node1 = self.childNode(withName: "koran") as? SKSpriteNode {
             tappableNode = node1
@@ -112,7 +137,7 @@ class GameScene: SKScene {
                         moveToSecondScene()
                     } else {
                         //tidak muncul di layar???
-                        changeOtherNodeColor()
+                        otherNode3.color = .green
                         // Setelah dipencet 1x remove tappablenode dari parent sehingga tappablenode tidak bisa di spam
 //                        tappableNode.removeFromParent()
                         
@@ -126,7 +151,7 @@ class GameScene: SKScene {
                         moveToSecondScene()
                     } else {
                         //tidak muncul di layar???
-                        changeOtherNodeColor()
+                        otherNode2.color = .green
                         // Setelah dipencet 1x remove tappablenode dari parent sehingga tappablenode tidak bisa di spam
 //                        tappableNode.removeFromParent()
                         
@@ -140,7 +165,7 @@ class GameScene: SKScene {
                         moveToSecondScene()
                     } else {
                         //tidak muncul di layar???
-                        changeOtherNodeColor()
+                        otherNode1.color = .green
                         // Setelah dipencet 1x remove tappablenode dari parent sehingga tappablenode tidak bisa di spam
 //                        tappableNode.removeFromParent()
                         
