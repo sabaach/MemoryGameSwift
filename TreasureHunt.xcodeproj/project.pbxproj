@@ -16,6 +16,13 @@
 		8A5825FB2BDE3D2B005AF515 /* TreasureHuntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5825FA2BDE3D2B005AF515 /* TreasureHuntTests.swift */; };
 		8A5826052BDE3D2B005AF515 /* TreasureHuntUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5826042BDE3D2B005AF515 /* TreasureHuntUITests.swift */; };
 		8A5826072BDE3D2B005AF515 /* TreasureHuntUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5826062BDE3D2B005AF515 /* TreasureHuntUITestsLaunchTests.swift */; };
+		8A7AD5222BE0BA180054CE83 /* GameOpeningScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7AD5152BE0BA170054CE83 /* GameOpeningScene.swift */; };
+		8A7AD5232BE0BA180054CE83 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7AD5192BE0BA170054CE83 /* GameOverScene.swift */; };
+		8A7AD5242BE0BA180054CE83 /* GameWinScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7AD51B2BE0BA170054CE83 /* GameWinScene.swift */; };
+		8A7AD5252BE0BA180054CE83 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7AD5112BE0BA170054CE83 /* GameViewController.swift */; };
+		8A7AD5262BE0BA180054CE83 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7AD5202BE0BA180054CE83 /* GameScene.swift */; };
+		8A7AD5272BE0BA180054CE83 /* AudioManager1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7AD50F2BE0BA170054CE83 /* AudioManager1.swift */; };
+		8A7AD5292BE0C2140054CE83 /* CollectStars.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A7AD5282BE0C2140054CE83 /* CollectStars.storyboard */; };
 		8AE212022BE012BB001AA10F /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8AE211FB2BE012BB001AA10F /* Actions.sks */; };
 		8AE212042BE012BB001AA10F /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE211FD2BE012BB001AA10F /* AudioManager.swift */; };
 		8AE212052BE012BB001AA10F /* GameScene1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8AE211FE2BE012BB001AA10F /* GameScene1.sks */; };
@@ -60,6 +67,22 @@
 		8A5826002BDE3D2B005AF515 /* TreasureHuntUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreasureHuntUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A5826042BDE3D2B005AF515 /* TreasureHuntUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureHuntUITests.swift; sourceTree = "<group>"; };
 		8A5826062BDE3D2B005AF515 /* TreasureHuntUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureHuntUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8A7AD50F2BE0BA170054CE83 /* AudioManager1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager1.swift; sourceTree = "<group>"; };
+		8A7AD5102BE0BA170054CE83 /* pixelGameSong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pixelGameSong.mp3; sourceTree = "<group>"; };
+		8A7AD5112BE0BA170054CE83 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		8A7AD5132BE0BA170054CE83 /* pixelGameSong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pixelGameSong.mp3; sourceTree = "<group>"; };
+		8A7AD5142BE0BA170054CE83 /* GameOpeningScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOpeningScene.sks; sourceTree = "<group>"; };
+		8A7AD5152BE0BA170054CE83 /* GameOpeningScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOpeningScene.swift; sourceTree = "<group>"; };
+		8A7AD5172BE0BA170054CE83 /* GameOverScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOverScene.sks; sourceTree = "<group>"; };
+		8A7AD5182BE0BA170054CE83 /* pixelGameSong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pixelGameSong.mp3; sourceTree = "<group>"; };
+		8A7AD5192BE0BA170054CE83 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		8A7AD51B2BE0BA170054CE83 /* GameWinScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWinScene.swift; sourceTree = "<group>"; };
+		8A7AD51C2BE0BA180054CE83 /* pixelGameSong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pixelGameSong.mp3; sourceTree = "<group>"; };
+		8A7AD51D2BE0BA180054CE83 /* GameWinScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameWinScene.sks; sourceTree = "<group>"; };
+		8A7AD51F2BE0BA180054CE83 /* pixelGameSong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pixelGameSong.mp3; sourceTree = "<group>"; };
+		8A7AD5202BE0BA180054CE83 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		8A7AD5212BE0BA180054CE83 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		8A7AD5282BE0C2140054CE83 /* CollectStars.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CollectStars.storyboard; sourceTree = "<group>"; };
 		8AE211FB2BE012BB001AA10F /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		8AE211FD2BE012BB001AA10F /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		8AE211FE2BE012BB001AA10F /* GameScene1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene1.sks; sourceTree = "<group>"; };
@@ -129,6 +152,7 @@
 				8A5825EA2BDE3D2A005AF515 /* Main.storyboard */,
 				8A5825EF2BDE3D2B005AF515 /* LaunchScreen.storyboard */,
 				8A5825ED2BDE3D2B005AF515 /* Assets.xcassets */,
+				8A7AD50E2BE0BA170054CE83 /* NanoChallenge 1 */,
 				8AE212012BE012BB001AA10F /* MemoryShared */,
 				8AE212452BE0304C001AA10F /* ColorMix */,
 			);
@@ -150,6 +174,61 @@
 				8A5826062BDE3D2B005AF515 /* TreasureHuntUITestsLaunchTests.swift */,
 			);
 			path = TreasureHuntUITests;
+			sourceTree = "<group>";
+		};
+		8A7AD50E2BE0BA170054CE83 /* NanoChallenge 1 */ = {
+			isa = PBXGroup;
+			children = (
+				8A7AD51A2BE0BA170054CE83 /* Game-Win */,
+				8A7AD5122BE0BA170054CE83 /* GameOpening */,
+				8A7AD5162BE0BA170054CE83 /* GameOver */,
+				8A7AD51E2BE0BA180054CE83 /* GameScene */,
+				8A7AD50F2BE0BA170054CE83 /* AudioManager1.swift */,
+				8A7AD5112BE0BA170054CE83 /* GameViewController.swift */,
+				8A7AD5282BE0C2140054CE83 /* CollectStars.storyboard */,
+				8A7AD5102BE0BA170054CE83 /* pixelGameSong.mp3 */,
+			);
+			path = "NanoChallenge 1";
+			sourceTree = "<group>";
+		};
+		8A7AD5122BE0BA170054CE83 /* GameOpening */ = {
+			isa = PBXGroup;
+			children = (
+				8A7AD5142BE0BA170054CE83 /* GameOpeningScene.sks */,
+				8A7AD5152BE0BA170054CE83 /* GameOpeningScene.swift */,
+				8A7AD5132BE0BA170054CE83 /* pixelGameSong.mp3 */,
+			);
+			path = GameOpening;
+			sourceTree = "<group>";
+		};
+		8A7AD5162BE0BA170054CE83 /* GameOver */ = {
+			isa = PBXGroup;
+			children = (
+				8A7AD5172BE0BA170054CE83 /* GameOverScene.sks */,
+				8A7AD5192BE0BA170054CE83 /* GameOverScene.swift */,
+				8A7AD5182BE0BA170054CE83 /* pixelGameSong.mp3 */,
+			);
+			path = GameOver;
+			sourceTree = "<group>";
+		};
+		8A7AD51A2BE0BA170054CE83 /* Game-Win */ = {
+			isa = PBXGroup;
+			children = (
+				8A7AD51D2BE0BA180054CE83 /* GameWinScene.sks */,
+				8A7AD51B2BE0BA170054CE83 /* GameWinScene.swift */,
+				8A7AD51C2BE0BA180054CE83 /* pixelGameSong.mp3 */,
+			);
+			path = "Game-Win";
+			sourceTree = "<group>";
+		};
+		8A7AD51E2BE0BA180054CE83 /* GameScene */ = {
+			isa = PBXGroup;
+			children = (
+				8A7AD5212BE0BA180054CE83 /* GameScene.sks */,
+				8A7AD5202BE0BA180054CE83 /* GameScene.swift */,
+				8A7AD51F2BE0BA180054CE83 /* pixelGameSong.mp3 */,
+			);
+			path = GameScene;
 			sourceTree = "<group>";
 		};
 		8AE211FA2BE012BB001AA10F /* Audio */ = {
@@ -296,6 +375,7 @@
 				8A5825F12BDE3D2B005AF515 /* Base in Resources */,
 				8AE212052BE012BB001AA10F /* GameScene1.sks in Resources */,
 				8AE212022BE012BB001AA10F /* Actions.sks in Resources */,
+				8A7AD5292BE0C2140054CE83 /* CollectStars.storyboard in Resources */,
 				8AE212562BE092A4001AA10F /* ColorMix.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,15 +401,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A7AD5252BE0BA180054CE83 /* GameViewController.swift in Sources */,
 				8AE212042BE012BB001AA10F /* AudioManager.swift in Sources */,
 				8AE212072BE012BB001AA10F /* SecondScene.swift in Sources */,
 				8AE212492BE0304C001AA10F /* ContentView.swift in Sources */,
 				8AE2124A2BE0304C001AA10F /* WinPage.swift in Sources */,
 				8A5825E92BDE3D2A005AF515 /* ViewController.swift in Sources */,
 				8AE2124E2BE091C6001AA10F /* MemoryController.swift in Sources */,
+				8A7AD5222BE0BA180054CE83 /* GameOpeningScene.swift in Sources */,
 				8AE212502BE0921D001AA10F /* ColorMixController.swift in Sources */,
 				8AE212062BE012BB001AA10F /* GameScene1.swift in Sources */,
+				8A7AD5262BE0BA180054CE83 /* GameScene.swift in Sources */,
 				8A5825E52BDE3D2A005AF515 /* AppDelegate.swift in Sources */,
+				8A7AD5242BE0BA180054CE83 /* GameWinScene.swift in Sources */,
+				8A7AD5232BE0BA180054CE83 /* GameOverScene.swift in Sources */,
+				8A7AD5272BE0BA180054CE83 /* AudioManager1.swift in Sources */,
 				8AE2124C2BE034DA001AA10F /* SwiftUIContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

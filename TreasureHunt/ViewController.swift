@@ -64,9 +64,10 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 }
                 else if hitResult.node.geometry is SCNCone {
                     print("CollectStar")
-                    let textNode = createTextNode(text: "Terima kasih")
-                    textNode.position = hitResult.node.position
-                    sceneView.scene.rootNode.addChildNode(textNode)
+//                    let textNode = createTextNode(text: "Terima kasih")
+//                    textNode.position = hitResult.node.position
+//                    sceneView.scene.rootNode.addChildNode(textNode)
+                    self.performSegue(withIdentifier: "tostar", sender: nil)
                 }
                 
             }
@@ -132,7 +133,14 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 memoryViewController.delegate = self
             }
         }
+        else if (segue.identifier == "tostar") {
+            if let gameViewController = segue.destination as? GameViewController {
+                gameViewController.delegate = self
+            }
+        }
     }
+    
+    public var firstButtonAction: ((_ url:String) -> Void)?
     
     
 }
