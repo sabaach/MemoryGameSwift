@@ -38,6 +38,8 @@ class GameScene1: SKScene {
         return scene
     }
     
+    
+    
     override func didMove(to view: SKView) {
         self.setUpScene()
     }

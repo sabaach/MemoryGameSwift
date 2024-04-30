@@ -161,7 +161,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
                 self.view?.presentScene(scene!, transition: ending )
                 
                 //Stop Music
-                AudioManager.shared.stopBackgroundMusic()
+                AudioManager1.shared.stopBackgroundMusic()
             }
             
             

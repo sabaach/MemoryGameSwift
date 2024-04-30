@@ -17,6 +17,10 @@ class MemoryController: UIViewController {
     var delegate: MemoryDelegate?
     
     override func viewDidLoad() {
+        //Untuk force landscape
+        let value = UIInterfaceOrientation.landscapeLeft.rawValue
+        UIDevice.current.setValue(value, forKey: "orientation")
+        
         super.viewDidLoad()
         
 //        delegate?.gameIsFinish()
