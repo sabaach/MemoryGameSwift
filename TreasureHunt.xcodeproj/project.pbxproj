@@ -16,6 +16,18 @@
 		8A5825FB2BDE3D2B005AF515 /* TreasureHuntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5825FA2BDE3D2B005AF515 /* TreasureHuntTests.swift */; };
 		8A5826052BDE3D2B005AF515 /* TreasureHuntUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5826042BDE3D2B005AF515 /* TreasureHuntUITests.swift */; };
 		8A5826072BDE3D2B005AF515 /* TreasureHuntUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5826062BDE3D2B005AF515 /* TreasureHuntUITestsLaunchTests.swift */; };
+		8AE212022BE012BB001AA10F /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8AE211FB2BE012BB001AA10F /* Actions.sks */; };
+		8AE212042BE012BB001AA10F /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE211FD2BE012BB001AA10F /* AudioManager.swift */; };
+		8AE212052BE012BB001AA10F /* GameScene1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8AE211FE2BE012BB001AA10F /* GameScene1.sks */; };
+		8AE212062BE012BB001AA10F /* GameScene1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE211FF2BE012BB001AA10F /* GameScene1.swift */; };
+		8AE212072BE012BB001AA10F /* SecondScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE212002BE012BB001AA10F /* SecondScene.swift */; };
+		8AE212492BE0304C001AA10F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE212432BE0304C001AA10F /* ContentView.swift */; };
+		8AE2124A2BE0304C001AA10F /* WinPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE212442BE0304C001AA10F /* WinPage.swift */; };
+		8AE2124C2BE034DA001AA10F /* SwiftUIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE2124B2BE034DA001AA10F /* SwiftUIContainer.swift */; };
+		8AE2124E2BE091C6001AA10F /* MemoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE2124D2BE091C6001AA10F /* MemoryController.swift */; };
+		8AE212502BE0921D001AA10F /* ColorMixController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE2124F2BE0921D001AA10F /* ColorMixController.swift */; };
+		8AE212532BE09285001AA10F /* Memory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AE212512BE09285001AA10F /* Memory.storyboard */; };
+		8AE212562BE092A4001AA10F /* ColorMix.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AE212542BE092A4001AA10F /* ColorMix.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +60,18 @@
 		8A5826002BDE3D2B005AF515 /* TreasureHuntUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreasureHuntUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A5826042BDE3D2B005AF515 /* TreasureHuntUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureHuntUITests.swift; sourceTree = "<group>"; };
 		8A5826062BDE3D2B005AF515 /* TreasureHuntUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureHuntUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8AE211FB2BE012BB001AA10F /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		8AE211FD2BE012BB001AA10F /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		8AE211FE2BE012BB001AA10F /* GameScene1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene1.sks; sourceTree = "<group>"; };
+		8AE211FF2BE012BB001AA10F /* GameScene1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene1.swift; sourceTree = "<group>"; };
+		8AE212002BE012BB001AA10F /* SecondScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondScene.swift; sourceTree = "<group>"; };
+		8AE212432BE0304C001AA10F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8AE212442BE0304C001AA10F /* WinPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinPage.swift; sourceTree = "<group>"; };
+		8AE2124B2BE034DA001AA10F /* SwiftUIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIContainer.swift; sourceTree = "<group>"; };
+		8AE2124D2BE091C6001AA10F /* MemoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryController.swift; sourceTree = "<group>"; };
+		8AE2124F2BE0921D001AA10F /* ColorMixController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorMixController.swift; sourceTree = "<group>"; };
+		8AE212522BE09285001AA10F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TreasureHunt/Base.lproj/Memory.storyboard; sourceTree = "<group>"; };
+		8AE212552BE092A4001AA10F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TreasureHunt/Base.lproj/ColorMix.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +125,12 @@
 				8A5825E42BDE3D2A005AF515 /* AppDelegate.swift */,
 				8A5825E62BDE3D2A005AF515 /* art.scnassets */,
 				8A5825E82BDE3D2A005AF515 /* ViewController.swift */,
+				8AE2124B2BE034DA001AA10F /* SwiftUIContainer.swift */,
 				8A5825EA2BDE3D2A005AF515 /* Main.storyboard */,
-				8A5825ED2BDE3D2B005AF515 /* Assets.xcassets */,
 				8A5825EF2BDE3D2B005AF515 /* LaunchScreen.storyboard */,
+				8A5825ED2BDE3D2B005AF515 /* Assets.xcassets */,
+				8AE212012BE012BB001AA10F /* MemoryShared */,
+				8AE212452BE0304C001AA10F /* ColorMix */,
 			);
 			path = TreasureHunt;
 			sourceTree = "<group>";
@@ -123,6 +150,39 @@
 				8A5826062BDE3D2B005AF515 /* TreasureHuntUITestsLaunchTests.swift */,
 			);
 			path = TreasureHuntUITests;
+			sourceTree = "<group>";
+		};
+		8AE211FA2BE012BB001AA10F /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		8AE212012BE012BB001AA10F /* MemoryShared */ = {
+			isa = PBXGroup;
+			children = (
+				8AE2124D2BE091C6001AA10F /* MemoryController.swift */,
+				8AE212512BE09285001AA10F /* Memory.storyboard */,
+				8AE211FA2BE012BB001AA10F /* Audio */,
+				8AE211FB2BE012BB001AA10F /* Actions.sks */,
+				8AE211FD2BE012BB001AA10F /* AudioManager.swift */,
+				8AE211FE2BE012BB001AA10F /* GameScene1.sks */,
+				8AE211FF2BE012BB001AA10F /* GameScene1.swift */,
+				8AE212002BE012BB001AA10F /* SecondScene.swift */,
+			);
+			path = MemoryShared;
+			sourceTree = "<group>";
+		};
+		8AE212452BE0304C001AA10F /* ColorMix */ = {
+			isa = PBXGroup;
+			children = (
+				8AE2124F2BE0921D001AA10F /* ColorMixController.swift */,
+				8AE212542BE092A4001AA10F /* ColorMix.storyboard */,
+				8AE212432BE0304C001AA10F /* ContentView.swift */,
+				8AE212442BE0304C001AA10F /* WinPage.swift */,
+			);
+			path = ColorMix;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,9 +290,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A5825E72BDE3D2A005AF515 /* art.scnassets in Resources */,
+				8AE212532BE09285001AA10F /* Memory.storyboard in Resources */,
 				8A5825EE2BDE3D2B005AF515 /* Assets.xcassets in Resources */,
 				8A5825EC2BDE3D2A005AF515 /* Base in Resources */,
 				8A5825F12BDE3D2B005AF515 /* Base in Resources */,
+				8AE212052BE012BB001AA10F /* GameScene1.sks in Resources */,
+				8AE212022BE012BB001AA10F /* Actions.sks in Resources */,
+				8AE212562BE092A4001AA10F /* ColorMix.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +321,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AE212042BE012BB001AA10F /* AudioManager.swift in Sources */,
+				8AE212072BE012BB001AA10F /* SecondScene.swift in Sources */,
+				8AE212492BE0304C001AA10F /* ContentView.swift in Sources */,
+				8AE2124A2BE0304C001AA10F /* WinPage.swift in Sources */,
 				8A5825E92BDE3D2A005AF515 /* ViewController.swift in Sources */,
+				8AE2124E2BE091C6001AA10F /* MemoryController.swift in Sources */,
+				8AE212502BE0921D001AA10F /* ColorMixController.swift in Sources */,
+				8AE212062BE012BB001AA10F /* GameScene1.swift in Sources */,
 				8A5825E52BDE3D2A005AF515 /* AppDelegate.swift in Sources */,
+				8AE2124C2BE034DA001AA10F /* SwiftUIContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +381,22 @@
 				8A5825F02BDE3D2B005AF515 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8AE212512BE09285001AA10F /* Memory.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AE212522BE09285001AA10F /* Base */,
+			);
+			name = Memory.storyboard;
+			sourceTree = "<group>";
+		};
+		8AE212542BE092A4001AA10F /* ColorMix.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AE212552BE092A4001AA10F /* Base */,
+			);
+			name = ColorMix.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
