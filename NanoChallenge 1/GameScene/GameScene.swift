@@ -35,12 +35,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
     
     //BackgroundMusic
     var backgroundMusicPlayer: AVAudioPlayer!
+    var destX: CGFloat = 0.0
+    
+    var accelerometer = true
 
    
     
     override func didMove(to view: SKView) {
 
         self.physicsWorld.contactDelegate = self
+        
+        coreMotionManager.startAccelerometerUpdates()
         
         // Get label node from scene and store it for use later
         self.points = self.childNode(withName: "//points") as? SKLabelNode
@@ -99,22 +104,64 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         //Disentuh dia akan bergeser ke arah tertentu
-        let touch = touches.first
-        if let location = touch?.location(in: self){
         
-            if location.x > (character?.position.x)! / 2 {
-                character?.position.x += 30 //Berjalan sejauh skala 30 ke kanan
-            }
-            else if location.x < (character?.position.x)! / 2 {
-                character?.position.x -= 30 //Berlajan sejauh skala 30 ke kiri
-            }
+        //KALAU BERGERAK DENGAN TAP LAYAR
+        
+        
+//        let touch = touches.first
+//        if let location = touch?.location(in: self){
+//
+//            if location.x > (character?.position.x)! / 2 {
+//                character?.position.x += 30 //Berjalan sejauh skala 30 ke kanan
+//            }
+//            else if location.x < (character?.position.x)! / 2 {
+//                character?.position.x -= 30 //Berlajan sejauh skala 30 ke kiri
+//            }
           
         // Gyro
           
-        }
+//        }
 
      
     }
+    
+    //Movement dari character game ke kiri dan kanan
+    func moveX() {
+        if accelerometer == true && coreMotionManager.isAccelerometerAvailable {
+            coreMotionManager.accelerometerUpdateInterval = 0.1
+            coreMotionManager.startAccelerometerUpdates(to: .main) {
+                (data, error) in
+                guard let data = data, error == nil else {
+                    return
+                }
+
+                let currentX = self.character?.position.x
+                self.destX = currentX! + CGFloat(data.acceleration.x * 1000)
+            }
+        }
+    }
+    
+    //Limit pergerakkan character supaya mentok di scene saja
+    func sideConstraints() {
+        let rightConstraint = size.width/2 - 70
+        let leftConstraint = rightConstraint*(-1)
+        let positionX = character?.position.x
+        
+        if (positionX! > rightConstraint) {
+            character?.run(SKAction.moveTo(x: rightConstraint, duration: 0.1))
+            if destX < rightConstraint {
+                character?.run(SKAction.moveTo(x: destX, duration: 1))
+            }
+        }
+        
+        if (positionX! < leftConstraint) {
+            character?.run(SKAction.moveTo(x: leftConstraint, duration: 0.1))
+            if destX > leftConstraint {
+                character?.run(SKAction.moveTo(x: destX, duration: 1))
+            }
+        }
+    }
+    
     
     func didBegin(_ contact: SKPhysicsContact) {
          characterContact(contact)
@@ -189,6 +236,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
             fallingObject()
         }
         
+        moveX()
+        character?.run(SKAction.moveTo(x: destX, duration: 1))
+        sideConstraints()
         
     }
     

@@ -5,13 +5,6 @@
 //  Created by Ferris Leroy Winata on 25/04/24.
 //
 
-//
-//  AppDelegate.swift
-//  NanoChallenge 1
-//
-//  Created by Ferris Leroy Winata on 24/04/24.
-//
-
 import UIKit
 
 @main

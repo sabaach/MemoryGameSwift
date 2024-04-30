@@ -16,7 +16,7 @@ class GameOpeningScene: SKScene {
 
     override func didMove(to view: SKView) {
         
-        AudioManager.shared.playBackgroundMusic(filename: "openingMusic")
+        AudioManager.shared.playBackgroundMusic(filename: "GameOpeningScene")
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
