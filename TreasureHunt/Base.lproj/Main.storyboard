@@ -32,8 +32,8 @@
                     <connections>
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
                         <segue destination="5te-qV-Bh8" kind="showDetail" identifier="toMemory" id="iUs-d8-z7C"/>
-                        <segue destination="eNN-Dj-XcE" kind="showDetail" id="jH9-Lz-okS"/>
-                        <segue destination="GEK-rD-P0h" kind="showDetail" identifier="tostar" id="dvo-WI-F6B"/>
+                        <segue destination="eNN-Dj-XcE" kind="showDetail" identifier="toColorMix" id="jH9-Lz-okS"/>
+                        <segue destination="GEK-rD-P0h" kind="showDetail" identifier="toStar" id="dvo-WI-F6B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>

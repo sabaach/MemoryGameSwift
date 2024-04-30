@@ -25,7 +25,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         //Membuat 3 objek bulan
         createMoonObject(position: SCNVector3(x: 0, y: 0.1, z: -10))
         createTreasureObject(position: SCNVector3(x: -1, y: 0.1, z: -5))
-        createTreasure1Object(position: SCNVector3(x: 2, y: 0.1, z: -15))
+        createTreasure1Object(position: SCNVector3(x: 2, y: 0.1, z: -10))
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -131,16 +131,24 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         if (segue.identifier == "toMemory") {
             if let memoryViewController = segue.destination as? MemoryController {
                 memoryViewController.delegate = self
+                memoryViewController.modalPresentationStyle = .fullScreen
             }
         }
-        else if (segue.identifier == "tostar") {
+        else if (segue.identifier == "toStar") {
             if let gameViewController = segue.destination as? GameViewController {
                 gameViewController.delegate = self
+                gameViewController.modalPresentationStyle = .fullScreen
             }
         }
+        else if (segue.identifier == "toColorMix") {
+            if let colorMixController = segue.destination as? ColorMixController {
+                //colorMixController.delegate = self
+            }
+        }
+        
     }
     
-    public var firstButtonAction: ((_ url:String) -> Void)?
+    //public var firstButtonAction: ((_ url:String) -> Void)?
     
     
 }
