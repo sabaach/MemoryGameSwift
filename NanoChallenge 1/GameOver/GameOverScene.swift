@@ -27,9 +27,12 @@ class GameOverScene: SKScene {
                
                // Check if the retry button was touched
                if node.name == "retry" {
+                   print("tapped")
                    let scene = GameScene(fileNamed: "GameScene")
                    scene!.scaleMode = .fill
-                   self.view?.presentScene(scene)
+                   let ending = SKTransition.fade(with: .black, duration: 1.5)
+                   self.view?.presentScene(scene!, transition: ending )
+                   
                }
            }
        }

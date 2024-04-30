@@ -7,6 +7,8 @@
 
 import SpriteKit
 import GameplayKit
+import CoreMotion
+import AVFoundation
 
 class GameScene: SKScene, SKPhysicsContactDelegate{
     // SKPhysicsContactDelegate berguna untuk membaca dan menghandle physic contact di scenenya
@@ -27,9 +29,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
     
     //Untuk menghitung jumlah points yang tercollect
     private var pointsCollected : Int = 0
+    
+    //cmManager
+    let coreMotionManager = CMMotionManager()
+    
+    //BackgroundMusic
+    var backgroundMusicPlayer: AVAudioPlayer!
+
    
     
     override func didMove(to view: SKView) {
+
         self.physicsWorld.contactDelegate = self
         
         // Get label node from scene and store it for use later
@@ -51,6 +61,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
         
         //Atur Kekuatan Gravitasi pada Game
         physicsWorld.gravity = CGVector(dx: 0, dy: -0.8)
+        
+        
+        // Song
+        
 
     }
     
@@ -133,16 +147,21 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
             
             if(Body1 == "point") {
                 contact.bodyA.node?.removeFromParent()
+                limitAmount -= 1
             }
             else {
                 contact.bodyB.node?.removeFromParent()
+                limitAmount -= 1
             }
            
-            if (pointsCollected == 3) {
+            if (pointsCollected == 5) {
                 let scene = GameOverScene(fileNamed: "GameWinScene")
                 scene!.scaleMode = .fill
-                let ending = SKTransition.push(with: .down, duration: 3.0)
+                let ending = SKTransition.push(with: .down, duration: 1.7)
                 self.view?.presentScene(scene!, transition: ending )
+                
+                //Stop Music
+                AudioManager.shared.stopBackgroundMusic()
             }
             
             
@@ -155,7 +174,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
             //Call Scene
             let scene = GameOverScene(fileNamed: "GameOverScene")
             scene!.scaleMode = .fill
-            let ending = SKTransition.push(with: .down, duration: 3.0)
+            let ending = SKTransition.push(with: .down, duration: 1.7)
             self.view?.presentScene(scene!, transition: ending )
         }
         
@@ -166,7 +185,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
         // Called before each frame is rendered (Akan dipakai)
         
         //Kalau amount yang jatuh totalnya dibawah 5 dia akan menjalankan function falling Object, tetapi kalau sudah, dia akan stop
-        if(limitAmount <= 3){
+        if(limitAmount < 5){
             fallingObject()
         }
         

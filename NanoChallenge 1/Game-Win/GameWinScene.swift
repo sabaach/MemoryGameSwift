@@ -20,7 +20,8 @@ class GameWinScene: SKScene {
         //Percobaan dulu, ketika tekan screen ganti scene
         let changeScreen = GameScene(fileNamed: "GameScene")
         changeScreen!.scaleMode = .fill
-        self.view?.presentScene(changeScreen)
+        let ending = SKTransition.fade(with: .black, duration: 1.5)
+        self.view?.presentScene(changeScreen! , transition: ending)
        }
 }
 
