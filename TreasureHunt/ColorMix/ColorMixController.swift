@@ -9,7 +9,7 @@ import UIKit
 import SwiftUI
 
 protocol ColorMixDelegate {
-    //func didTapButton()
+    
 }
 
 class ColorMixController: UIViewController {
@@ -35,7 +35,8 @@ class ColorMixController: UIViewController {
         print("Page ColorMix terbuka")
     }
     
-    
-    
+    @IBAction func backButtonTapped(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
     
 }

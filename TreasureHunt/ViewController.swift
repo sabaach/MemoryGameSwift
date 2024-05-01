@@ -10,7 +10,13 @@ import SceneKit
 import ARKit
 import SwiftUI
 
+protocol ViewControllerDelegate{
+    
+}
+
 class ViewController: UIViewController, ARSCNViewDelegate, ColorMixDelegate {
+    
+    var delegate: ViewControllerDelegate?
     
     @IBOutlet var sceneView: ARSCNView!
     
@@ -69,6 +75,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, ColorMixDelegate {
                 
                 else if hitResult.node.geometry is SCNCone {
                     print("CollectStar")
+                    sceneView.session.pause()
 //                    let textNode = createTextNode(text: "Terima kasih")
 //                    textNode.position = hitResult.node.position
 //                    sceneView.scene.rootNode.addChildNode(textNode)
@@ -77,6 +84,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, ColorMixDelegate {
                 
                 else if hitResult.node.geometry is SCNSphere {
                     print("ColorMix")
+                    sceneView.session.pause()
 //                    let textNode = createTextNode(text: "TRY AGAINNN")
 //                    textNode.position = hitResult.node.position
 //                    sceneView.scene.rootNode.addChildNode(textNode)

@@ -10,6 +10,8 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @Environment(\.presentationMode) var presentationMode
+    
     static func randomizer() -> Double{
         return Double.random(in: 0..<1)
     }
@@ -35,6 +37,7 @@ struct ContentView: View {
     }
     
     var body: some View {
+        
         VStack (spacing: 20){
             
             HStack{
@@ -61,11 +64,26 @@ struct ContentView: View {
                 .padding(EdgeInsets(top: 16, leading: 24, bottom: 16, trailing: 24))
                 .background(Color.blue)
                 .cornerRadius(.infinity)
+            Button(action: {
+                backButtonTapped()
+            }) {
+                Text("🏠")}
+            
+                .padding(EdgeInsets(top: 16, leading: 24, bottom: 16, trailing: 24))
+                .background(Color.blue)
+                .cornerRadius(.infinity)
             
         }
         .preferredColorScheme(.light)
     }
+    
+    func backButtonTapped() {
+        // Dismiss the view using presentationMode
+        presentationMode.wrappedValue.dismiss()
+    }
 }
+
+
 
 #Preview {
     ContentView(redSlider: 0, greenSlider: 0, blueSlider: 0)
