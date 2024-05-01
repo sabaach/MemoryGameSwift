@@ -7,40 +7,41 @@
 
 import UIKit
 import SpriteKit
-import GameplayKit
+//import GameplayKit
+
+//protocol StarDelegate {
+//    func gameIsFinished()
+//}
 
 class GameViewController: UIViewController {
-    var delegate: MemoryDelegate?
+//    var delegate: StarDelegate?
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
+        let newView = SKView(frame: CGRect(x: 0, y: 0, width: 400, height: 400))
+        self.view = newView
         
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
             if let scene = SKScene(fileNamed: "GameOpeningScene") {
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFill
-                
+//                scene.referenceOfGameViewController = self
                 // Present the scene
                 view.presentScene(scene)
             }
-            
-            view.ignoresSiblingOrder = true
-            
-            view.showsFPS = true
-            view.showsNodeCount = true
+            else {
+                print("Error: GameOpeningScene.sks file not found")
+            }
+        }
+        
+        else {
+                print("Error: Failed to create SKView")
+            }
         }
     }
 
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        if UIDevice.current.userInterfaceIdiom == .phone {
-            return .allButUpsideDown
-        } else {
-            return .all
-        }
-    }
-
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
-}
+//let nextScene = SecondScene(size: self.size)
+//self.view?.presentScene(nextScene)

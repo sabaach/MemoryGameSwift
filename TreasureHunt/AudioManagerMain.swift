@@ -1,0 +1,29 @@
+import AVFoundation
+
+class AudioManagerMain {
+    
+    static let shared = AudioManagerMain()
+    var backgroundMusicPlayer: AVAudioPlayer?
+
+    private init() {}
+
+    func playBackgroundMusic(filename: String) {
+        guard let url = Bundle.main.url(forResource: "â We are! (Orchestra) One Piece", withExtension: "mp3") else {
+            print("Could not find the audio file")
+            return
+        }
+
+        do {
+            backgroundMusicPlayer = try AVAudioPlayer(contentsOf: url)
+            backgroundMusicPlayer?.prepareToPlay()
+            backgroundMusicPlayer?.numberOfLoops = -1 // Loop the music indefinitely
+            backgroundMusicPlayer?.play()
+        } catch {
+            print("Error playing the audio file: \(error.localizedDescription)")
+        }
+    }
+
+    func stopBackgroundMusic() {
+        backgroundMusicPlayer?.stop()
+    }
+}

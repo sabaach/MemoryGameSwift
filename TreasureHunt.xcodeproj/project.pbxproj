@@ -22,7 +22,18 @@
 		8A7AD5252BE0BA180054CE83 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7AD5112BE0BA170054CE83 /* GameViewController.swift */; };
 		8A7AD5262BE0BA180054CE83 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7AD5202BE0BA180054CE83 /* GameScene.swift */; };
 		8A7AD5272BE0BA180054CE83 /* AudioManager1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7AD50F2BE0BA170054CE83 /* AudioManager1.swift */; };
-		8A7AD5292BE0C2140054CE83 /* CollectStars.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A7AD5282BE0C2140054CE83 /* CollectStars.storyboard */; };
+		8A7AD52C2BE2281F0054CE83 /* CollectStars.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A7AD52A2BE2281F0054CE83 /* CollectStars.storyboard */; };
+		8A7AD52D2BE251C50054CE83 /* GameOpeningScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8A7AD5142BE0BA170054CE83 /* GameOpeningScene.sks */; };
+		8A7AD52E2BE251C90054CE83 /* GameOverScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8A7AD5172BE0BA170054CE83 /* GameOverScene.sks */; };
+		8A7AD52F2BE251CD0054CE83 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8A7AD5212BE0BA180054CE83 /* GameScene.sks */; };
+		8A7AD5302BE251DE0054CE83 /* GameWinScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8A7AD51D2BE0BA180054CE83 /* GameWinScene.sks */; };
+		8A7AD5312BE255C40054CE83 /* pixelGameSong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A7AD5102BE0BA170054CE83 /* pixelGameSong.mp3 */; };
+		8A7AD5342BE2562B0054CE83 /* Bink's Sake (Instrumental).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A7AD5332BE2562B0054CE83 /* Bink's Sake (Instrumental).mp3 */; };
+		8A7AD5362BE257D30054CE83 /* AudioManagerMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7AD5352BE257D30054CE83 /* AudioManagerMain.swift */; };
+		8A7AD53A2BE261000054CE83 /* â We are! (Orchestra) One Piece.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A7AD5392BE261000054CE83 /* â We are! (Orchestra) One Piece.mp3 */; };
+		8A7AD53C2BE285D40054CE83 /* SecondScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8A7AD53B2BE285D40054CE83 /* SecondScene.sks */; };
+		8A7AD5412BE28B7C0054CE83 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7AD5402BE28B7C0054CE83 /* SplashScreenViewController.swift */; };
+		8A7AD5432BE292B50054CE83 /* one.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8A7AD5422BE292B50054CE83 /* one.mp4 */; };
 		8AE212022BE012BB001AA10F /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8AE211FB2BE012BB001AA10F /* Actions.sks */; };
 		8AE212042BE012BB001AA10F /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE211FD2BE012BB001AA10F /* AudioManager.swift */; };
 		8AE212052BE012BB001AA10F /* GameScene1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8AE211FE2BE012BB001AA10F /* GameScene1.sks */; };
@@ -70,19 +81,21 @@
 		8A7AD50F2BE0BA170054CE83 /* AudioManager1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager1.swift; sourceTree = "<group>"; };
 		8A7AD5102BE0BA170054CE83 /* pixelGameSong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pixelGameSong.mp3; sourceTree = "<group>"; };
 		8A7AD5112BE0BA170054CE83 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		8A7AD5132BE0BA170054CE83 /* pixelGameSong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pixelGameSong.mp3; sourceTree = "<group>"; };
 		8A7AD5142BE0BA170054CE83 /* GameOpeningScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOpeningScene.sks; sourceTree = "<group>"; };
 		8A7AD5152BE0BA170054CE83 /* GameOpeningScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOpeningScene.swift; sourceTree = "<group>"; };
 		8A7AD5172BE0BA170054CE83 /* GameOverScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOverScene.sks; sourceTree = "<group>"; };
-		8A7AD5182BE0BA170054CE83 /* pixelGameSong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pixelGameSong.mp3; sourceTree = "<group>"; };
 		8A7AD5192BE0BA170054CE83 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 		8A7AD51B2BE0BA170054CE83 /* GameWinScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWinScene.swift; sourceTree = "<group>"; };
-		8A7AD51C2BE0BA180054CE83 /* pixelGameSong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pixelGameSong.mp3; sourceTree = "<group>"; };
 		8A7AD51D2BE0BA180054CE83 /* GameWinScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameWinScene.sks; sourceTree = "<group>"; };
-		8A7AD51F2BE0BA180054CE83 /* pixelGameSong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pixelGameSong.mp3; sourceTree = "<group>"; };
 		8A7AD5202BE0BA180054CE83 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		8A7AD5212BE0BA180054CE83 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		8A7AD5282BE0C2140054CE83 /* CollectStars.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CollectStars.storyboard; sourceTree = "<group>"; };
+		8A7AD52B2BE2281F0054CE83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TreasureHunt/Base.lproj/CollectStars.storyboard; sourceTree = "<group>"; };
+		8A7AD5332BE2562B0054CE83 /* Bink's Sake (Instrumental).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Bink's Sake (Instrumental).mp3"; sourceTree = "<group>"; };
+		8A7AD5352BE257D30054CE83 /* AudioManagerMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManagerMain.swift; sourceTree = "<group>"; };
+		8A7AD5392BE261000054CE83 /* â We are! (Orchestra) One Piece.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "â We are! (Orchestra) One Piece.mp3"; sourceTree = "<group>"; };
+		8A7AD53B2BE285D40054CE83 /* SecondScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SecondScene.sks; sourceTree = "<group>"; };
+		8A7AD5402BE28B7C0054CE83 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		8A7AD5422BE292B50054CE83 /* one.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = one.mp4; sourceTree = "<group>"; };
 		8AE211FB2BE012BB001AA10F /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		8AE211FD2BE012BB001AA10F /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		8AE211FE2BE012BB001AA10F /* GameScene1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene1.sks; sourceTree = "<group>"; };
@@ -145,10 +158,14 @@
 		8A5825E32BDE3D2A005AF515 /* TreasureHunt */ = {
 			isa = PBXGroup;
 			children = (
+				8A7AD5422BE292B50054CE83 /* one.mp4 */,
+				8A7AD5402BE28B7C0054CE83 /* SplashScreenViewController.swift */,
 				8A5825E42BDE3D2A005AF515 /* AppDelegate.swift */,
 				8A5825E62BDE3D2A005AF515 /* art.scnassets */,
 				8A5825E82BDE3D2A005AF515 /* ViewController.swift */,
 				8AE2124B2BE034DA001AA10F /* SwiftUIContainer.swift */,
+				8A7AD5352BE257D30054CE83 /* AudioManagerMain.swift */,
+				8A7AD5392BE261000054CE83 /* â We are! (Orchestra) One Piece.mp3 */,
 				8A5825EA2BDE3D2A005AF515 /* Main.storyboard */,
 				8A5825EF2BDE3D2B005AF515 /* LaunchScreen.storyboard */,
 				8A5825ED2BDE3D2B005AF515 /* Assets.xcassets */,
@@ -179,13 +196,21 @@
 		8A7AD50E2BE0BA170054CE83 /* NanoChallenge 1 */ = {
 			isa = PBXGroup;
 			children = (
+				8A7AD5112BE0BA170054CE83 /* GameViewController.swift */,
+				8A7AD52A2BE2281F0054CE83 /* CollectStars.storyboard */,
+				8A7AD51D2BE0BA180054CE83 /* GameWinScene.sks */,
+				8A7AD51B2BE0BA170054CE83 /* GameWinScene.swift */,
+				8A7AD5142BE0BA170054CE83 /* GameOpeningScene.sks */,
+				8A7AD5152BE0BA170054CE83 /* GameOpeningScene.swift */,
+				8A7AD5172BE0BA170054CE83 /* GameOverScene.sks */,
+				8A7AD5192BE0BA170054CE83 /* GameOverScene.swift */,
+				8A7AD5212BE0BA180054CE83 /* GameScene.sks */,
+				8A7AD5202BE0BA180054CE83 /* GameScene.swift */,
 				8A7AD51A2BE0BA170054CE83 /* Game-Win */,
 				8A7AD5122BE0BA170054CE83 /* GameOpening */,
 				8A7AD5162BE0BA170054CE83 /* GameOver */,
 				8A7AD51E2BE0BA180054CE83 /* GameScene */,
 				8A7AD50F2BE0BA170054CE83 /* AudioManager1.swift */,
-				8A7AD5112BE0BA170054CE83 /* GameViewController.swift */,
-				8A7AD5282BE0C2140054CE83 /* CollectStars.storyboard */,
 				8A7AD5102BE0BA170054CE83 /* pixelGameSong.mp3 */,
 			);
 			path = "NanoChallenge 1";
@@ -194,9 +219,6 @@
 		8A7AD5122BE0BA170054CE83 /* GameOpening */ = {
 			isa = PBXGroup;
 			children = (
-				8A7AD5142BE0BA170054CE83 /* GameOpeningScene.sks */,
-				8A7AD5152BE0BA170054CE83 /* GameOpeningScene.swift */,
-				8A7AD5132BE0BA170054CE83 /* pixelGameSong.mp3 */,
 			);
 			path = GameOpening;
 			sourceTree = "<group>";
@@ -204,9 +226,6 @@
 		8A7AD5162BE0BA170054CE83 /* GameOver */ = {
 			isa = PBXGroup;
 			children = (
-				8A7AD5172BE0BA170054CE83 /* GameOverScene.sks */,
-				8A7AD5192BE0BA170054CE83 /* GameOverScene.swift */,
-				8A7AD5182BE0BA170054CE83 /* pixelGameSong.mp3 */,
 			);
 			path = GameOver;
 			sourceTree = "<group>";
@@ -214,9 +233,6 @@
 		8A7AD51A2BE0BA170054CE83 /* Game-Win */ = {
 			isa = PBXGroup;
 			children = (
-				8A7AD51D2BE0BA180054CE83 /* GameWinScene.sks */,
-				8A7AD51B2BE0BA170054CE83 /* GameWinScene.swift */,
-				8A7AD51C2BE0BA180054CE83 /* pixelGameSong.mp3 */,
 			);
 			path = "Game-Win";
 			sourceTree = "<group>";
@@ -224,18 +240,8 @@
 		8A7AD51E2BE0BA180054CE83 /* GameScene */ = {
 			isa = PBXGroup;
 			children = (
-				8A7AD5212BE0BA180054CE83 /* GameScene.sks */,
-				8A7AD5202BE0BA180054CE83 /* GameScene.swift */,
-				8A7AD51F2BE0BA180054CE83 /* pixelGameSong.mp3 */,
 			);
 			path = GameScene;
-			sourceTree = "<group>";
-		};
-		8AE211FA2BE012BB001AA10F /* Audio */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Audio;
 			sourceTree = "<group>";
 		};
 		8AE212012BE012BB001AA10F /* MemoryShared */ = {
@@ -243,10 +249,11 @@
 			children = (
 				8AE2124D2BE091C6001AA10F /* MemoryController.swift */,
 				8AE212512BE09285001AA10F /* Memory.storyboard */,
-				8AE211FA2BE012BB001AA10F /* Audio */,
 				8AE211FB2BE012BB001AA10F /* Actions.sks */,
 				8AE211FD2BE012BB001AA10F /* AudioManager.swift */,
+				8A7AD5332BE2562B0054CE83 /* Bink's Sake (Instrumental).mp3 */,
 				8AE211FE2BE012BB001AA10F /* GameScene1.sks */,
+				8A7AD53B2BE285D40054CE83 /* SecondScene.sks */,
 				8AE211FF2BE012BB001AA10F /* GameScene1.swift */,
 				8AE212002BE012BB001AA10F /* SecondScene.swift */,
 			);
@@ -368,14 +375,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A7AD5432BE292B50054CE83 /* one.mp4 in Resources */,
 				8A5825E72BDE3D2A005AF515 /* art.scnassets in Resources */,
 				8AE212532BE09285001AA10F /* Memory.storyboard in Resources */,
 				8A5825EE2BDE3D2B005AF515 /* Assets.xcassets in Resources */,
+				8A7AD5342BE2562B0054CE83 /* Bink's Sake (Instrumental).mp3 in Resources */,
+				8A7AD52D2BE251C50054CE83 /* GameOpeningScene.sks in Resources */,
+				8A7AD52F2BE251CD0054CE83 /* GameScene.sks in Resources */,
+				8A7AD53C2BE285D40054CE83 /* SecondScene.sks in Resources */,
 				8A5825EC2BDE3D2A005AF515 /* Base in Resources */,
 				8A5825F12BDE3D2B005AF515 /* Base in Resources */,
 				8AE212052BE012BB001AA10F /* GameScene1.sks in Resources */,
 				8AE212022BE012BB001AA10F /* Actions.sks in Resources */,
-				8A7AD5292BE0C2140054CE83 /* CollectStars.storyboard in Resources */,
+				8A7AD52C2BE2281F0054CE83 /* CollectStars.storyboard in Resources */,
+				8A7AD52E2BE251C90054CE83 /* GameOverScene.sks in Resources */,
+				8A7AD5302BE251DE0054CE83 /* GameWinScene.sks in Resources */,
+				8A7AD53A2BE261000054CE83 /* â We are! (Orchestra) One Piece.mp3 in Resources */,
+				8A7AD5312BE255C40054CE83 /* pixelGameSong.mp3 in Resources */,
 				8AE212562BE092A4001AA10F /* ColorMix.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,10 +419,12 @@
 			files = (
 				8A7AD5252BE0BA180054CE83 /* GameViewController.swift in Sources */,
 				8AE212042BE012BB001AA10F /* AudioManager.swift in Sources */,
+				8A7AD5412BE28B7C0054CE83 /* SplashScreenViewController.swift in Sources */,
 				8AE212072BE012BB001AA10F /* SecondScene.swift in Sources */,
 				8AE212492BE0304C001AA10F /* ContentView.swift in Sources */,
 				8AE2124A2BE0304C001AA10F /* WinPage.swift in Sources */,
 				8A5825E92BDE3D2A005AF515 /* ViewController.swift in Sources */,
+				8A7AD5362BE257D30054CE83 /* AudioManagerMain.swift in Sources */,
 				8AE2124E2BE091C6001AA10F /* MemoryController.swift in Sources */,
 				8A7AD5222BE0BA180054CE83 /* GameOpeningScene.swift in Sources */,
 				8AE212502BE0921D001AA10F /* ColorMixController.swift in Sources */,
@@ -467,6 +485,14 @@
 				8A5825F02BDE3D2B005AF515 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8A7AD52A2BE2281F0054CE83 /* CollectStars.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A7AD52B2BE2281F0054CE83 /* Base */,
+			);
+			name = CollectStars.storyboard;
 			sourceTree = "<group>";
 		};
 		8AE212512BE09285001AA10F /* Memory.storyboard */ = {
