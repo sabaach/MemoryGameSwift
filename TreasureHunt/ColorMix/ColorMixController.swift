@@ -35,8 +35,8 @@ class ColorMixController: UIViewController {
         print("Page ColorMix terbuka")
     }
     
-    @IBAction func backButtonTapped(_ sender: UIButton) {
+    /*@IBAction func backButtonTapped(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
-    }
+    }*/
     
 }

@@ -9,12 +9,12 @@ import UIKit
 import SpriteKit
 //import GameplayKit
 
-//protocol StarDelegate {
+protocol gameViewDelegate {
 //    func gameIsFinished()
-//}
+}
 
 class GameViewController: UIViewController {
-//    var delegate: StarDelegate?
+    var delegate: gameViewDelegate?
 
     override func viewDidLoad() {
         

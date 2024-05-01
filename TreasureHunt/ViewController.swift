@@ -10,13 +10,8 @@ import SceneKit
 import ARKit
 import SwiftUI
 
-protocol ViewControllerDelegate{
-    
-}
 
-class ViewController: UIViewController, ARSCNViewDelegate, ColorMixDelegate {
-    
-    var delegate: ViewControllerDelegate?
+class ViewController: UIViewController, ARSCNViewDelegate, ColorMixDelegate, gameViewDelegate {
     
     @IBOutlet var sceneView: ARSCNView!
     
@@ -301,7 +296,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, ColorMixDelegate {
         }
         else if (segue.identifier == "toStar") {
             if let gameViewController = segue.destination as? GameViewController {
-//                gameViewController.delegate = self
+                gameViewController.delegate = self
                 gameViewController.modalPresentationStyle = .fullScreen
             }
         }

@@ -14,6 +14,10 @@ protocol MemoryDelegate {
 
 class MemoryController: UIViewController {
     
+    @IBAction func dismissScene(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     var delegate: MemoryDelegate?
     
     override func viewDidLoad() {

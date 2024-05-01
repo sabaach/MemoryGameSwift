@@ -2,6 +2,7 @@ import Foundation
 import SpriteKit
 
 class SecondScene: SKScene {
+    
     // Mendeklarasikan tombol
     var exitButton: SKSpriteNode!
     
@@ -25,7 +26,7 @@ class SecondScene: SKScene {
     
     // Fungsi untuk menangani ketika tombol ditekan
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for touch in touches {
+        /*for touch in touches {
             let location = touch.location(in: self)
             
             // Memeriksa apakah tombol ditekan
@@ -33,6 +34,9 @@ class SecondScene: SKScene {
                 // Keluar dari scene
                 exitScene()
             }
+        }*/
+        if let presentingViewController = view?.window?.rootViewController {
+            presentingViewController.dismiss(animated: true, completion: nil)
         }
     }
     
