@@ -10,7 +10,7 @@ import SceneKit
 import ARKit
 import SwiftUI
 
-class ViewController: UIViewController, ARSCNViewDelegate {
+class ViewController: UIViewController, ARSCNViewDelegate, ColorMixDelegate {
     
     @IBOutlet var sceneView: ARSCNView!
     
@@ -73,6 +73,14 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 //                    textNode.position = hitResult.node.position
 //                    sceneView.scene.rootNode.addChildNode(textNode)
                     self.performSegue(withIdentifier: "toStar", sender: nil)
+                }
+                
+                else if hitResult.node.geometry is SCNSphere {
+                    print("ColorMix")
+//                    let textNode = createTextNode(text: "TRY AGAINNN")
+//                    textNode.position = hitResult.node.position
+//                    sceneView.scene.rootNode.addChildNode(textNode)
+                    self.performSegue(withIdentifier: "toColorMix", sender: nil)
                 }
                 
                 //CLONE OBJECT
@@ -289,11 +297,12 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 gameViewController.modalPresentationStyle = .fullScreen
             }
         }
-//        else if (segue.identifier == "toColorMix") {
-//            if let colorMixController = segue.destination as? ColorMixController {
-//                //colorMixController.delegate = self
-//            }
-//        }
+        else if (segue.identifier == "toColorMix") {
+            if let colorMixController = segue.destination as? ColorMixController {
+                colorMixController.delegate = self
+                colorMixController.modalPresentationStyle = .fullScreen
+            }
+        }
         
     }
     

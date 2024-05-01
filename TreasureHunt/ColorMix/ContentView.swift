@@ -7,7 +7,9 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
+    
     static func randomizer() -> Double{
         return Double.random(in: 0..<1)
     }
@@ -57,7 +59,7 @@ struct ContentView: View {
                 Text("✅")}
             
                 .padding(EdgeInsets(top: 16, leading: 24, bottom: 16, trailing: 24))
-                .background(Color.black)
+                .background(Color.blue)
                 .cornerRadius(.infinity)
             
         }
