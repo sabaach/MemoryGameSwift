@@ -1,18 +1,29 @@
-//
-//  WinPage.swift
-//  ColorMix
-//
-//  Created by Medeline Agustine on 29/04/24.
-//
-
 import SwiftUI
 
 struct WinPage: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            // Background image
+            Image("backgroundBadge") // Ganti "backgroundImage" dengan nama gambar latar belakang dari asset
+                .resizable()
+                .scaledToFill()
+                .edgesIgnoringSafeArea(.all)
+            
+            // Image di tengah
+            VStack {
+                Spacer()
+                Image("badge3") // Ganti "centeredImage" dengan nama gambar yang ingin Anda gunakan
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 200, height: 200) // Sesuaikan ukuran gambar sesuai kebutuhan
+                Spacer()
+            }
+        }
     }
 }
 
-#Preview {
-    WinPage()
+struct WinPage_Previews: PreviewProvider {
+    static var previews: some View {
+        WinPage()
+    }
 }
